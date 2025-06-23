@@ -1,4 +1,9 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ViewEncapsulation,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 
 /* eslint-disable */
 
@@ -769,10 +774,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
               Add UI library
             </summary>
             <pre><span># Generate UI lib</span>
-nx g @nrwl/angular:lib ui
 
-<span># Add a component</span>
-nx g @nrwl/angular:component button --project ui</pre>
+<span># Add a component</span> button --project ui</pre>
           </details>
           <details>
             <summary>
@@ -841,7 +844,9 @@ nx affected:e2e</pre>
     </div>
   `,
   styles: [],
+  standalone: false,
   encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NxWelcomeComponent implements OnInit {
   constructor() {}

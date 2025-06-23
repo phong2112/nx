@@ -1,0 +1,48 @@
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.178Z - Started listening on: /var/folders/lt/g9t1t1617qs_w337mj4wwbhc0000gn/T/d765cfce7afb72796f57/d.sock
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.181Z - [WATCHER]: Subscribed to changes within: /Users/smb/nx (native)
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.186Z - Established a connection. Number of open connections: 1
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.187Z - Established a connection. Number of open connections: 2
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.189Z - Closed a connection. Number of open connections: 1
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.191Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.191Z - Done responding to the client Shutdown initiated
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.191Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.192Z - Closed a connection. Number of open connections: 0
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.193Z - [WATCHER]: Stopping the watcher for /Users/smb/nx (sources)
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.193Z - [WATCHER]: Stopping the watcher for /Users/smb/nx (outputs)
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:48:03.193Z - Server stopped because: "Request to shutdown"
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.176Z - Started listening on: /var/folders/lt/g9t1t1617qs_w337mj4wwbhc0000gn/T/d765cfce7afb72796f57/d.sock
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.184Z - [WATCHER]: Subscribed to changes within: /Users/smb/nx (native)
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.187Z - Established a connection. Number of open connections: 1
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.188Z - Established a connection. Number of open connections: 2
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.191Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.192Z - Done responding to the client Shutdown initiated
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.192Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.193Z - Closed a connection. Number of open connections: 1
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.194Z - Closed a connection. Number of open connections: 0
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.194Z - [WATCHER]: Stopping the watcher for /Users/smb/nx (sources)
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.194Z - [WATCHER]: Stopping the watcher for /Users/smb/nx (outputs)
+[NX v21.2.0 Daemon Server] - 2025-06-18T07:50:34.194Z - Server stopped because: "Request to shutdown"
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.605Z - Started listening on: /var/folders/lt/g9t1t1617qs_w337mj4wwbhc0000gn/T/d765cfce7afb72796f57/d.sock
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.613Z - [WATCHER]: Subscribed to changes within: /Users/smb/nx (native)
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.616Z - Established a connection. Number of open connections: 1
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.616Z - Established a connection. Number of open connections: 2
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.620Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.620Z - Done responding to the client Shutdown initiated
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.620Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.621Z - Closed a connection. Number of open connections: 1
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.622Z - Closed a connection. Number of open connections: 0
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.622Z - [WATCHER]: Stopping the watcher for /Users/smb/nx (sources)
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.623Z - [WATCHER]: Stopping the watcher for /Users/smb/nx (outputs)
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:17:18.623Z - Server stopped because: "Request to shutdown"
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.701Z - Started listening on: /var/folders/lt/g9t1t1617qs_w337mj4wwbhc0000gn/T/d765cfce7afb72796f57/d.sock
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.708Z - [WATCHER]: Subscribed to changes within: /Users/smb/nx (native)
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.711Z - Established a connection. Number of open connections: 1
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.712Z - Established a connection. Number of open connections: 2
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.715Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.716Z - Done responding to the client Shutdown initiated
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.716Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.716Z - Closed a connection. Number of open connections: 1
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.717Z - Closed a connection. Number of open connections: 0
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.718Z - [WATCHER]: Stopping the watcher for /Users/smb/nx (sources)
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.718Z - [WATCHER]: Stopping the watcher for /Users/smb/nx (outputs)
+[NX v21.2.0 Daemon Server] - 2025-06-18T08:40:23.718Z - Server stopped because: "Request to shutdown"
