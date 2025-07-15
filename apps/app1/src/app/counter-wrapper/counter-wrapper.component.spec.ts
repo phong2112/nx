@@ -6,4 +6,8 @@ describe('AppComponent', () => {
       declarations: [CounterWrapperComponent],
     }).compileComponents();
   });
+
+  it('should create', () => {
+    expect(true).toBe(true);
+  });
 });

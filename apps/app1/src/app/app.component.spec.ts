@@ -1,11 +1,15 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import { CounterComponent } from './counter/counter.component';
+import { CounterWrapperComponent } from './counter-wrapper/counter-wrapper.component';
+import { Lib1Module } from '@my-workspace/lib1';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent, NxWelcomeComponent],
+      declarations: [AppComponent, NxWelcomeComponent, CounterComponent, CounterWrapperComponent],
+      imports: [Lib1Module]
     }).compileComponents();
   });
 
