@@ -20,7 +20,7 @@ export class CounterComponent {
   constructor() {
     effect(
       () => {
-        console.log('Count is', this.count());
+        console.log('Count is', this.count() + 1);
         this.sum.set(this.count() * 3);
       },
       { allowSignalWrites: true }
