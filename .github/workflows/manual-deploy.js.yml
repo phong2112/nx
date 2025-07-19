@@ -17,6 +17,8 @@ on:
         options:
           - staging
           - production
+          - development
+
 
 jobs:
   build:
