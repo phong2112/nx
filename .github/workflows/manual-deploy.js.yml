@@ -1,12 +1,22 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: CI & Deploy to Vercel
+name: CI & Manual Deploy to Vercel
 
 on:
-  release:
-    types: [created]
-    
+  workflow_dispatch:
+    inputs:
+      version_ref:
+        description: 'Commit SHA hoặc Tag cần deploy (ví dụ: 1.2.3 hoặc a1b2c3d)'
+        required: true
+      environment:
+        description: 'Chọn môi trường deploy'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
 
 jobs:
   build:
@@ -18,6 +28,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.version_ref }}
+
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
@@ -32,7 +45,7 @@ jobs:
       - name: Create .env file
         run: |
           sed -i "s/__APP_VERSION__/${VERSION}/g" apps/app1/src/environments/environment.prod.ts
-          
+
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
