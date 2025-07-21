@@ -7,7 +7,6 @@ on:
   release:
     types: [created]
     
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,8 +30,10 @@ jobs:
 
       - name: Create .env file
         run: |
-          sed -i "s#__APP_VERSION__#${VERSION}#g" apps/app1/src/environments/environment.prod.ts
-
+          echo "export const environment = {
+            production: true,
+            appVersion: '${VERSION}'
+          };" > apps/app1/src/environments/environment.production.ts
           
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
