@@ -21,6 +21,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
@@ -31,14 +32,14 @@ jobs:
         run: |
           echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
           echo "VERSION=${GITHUB_REF#refs/tags/}"
-
-      - name: Create .env file
+          
+      - name: Create .env file (or edit prod file)
         run: |
           mkdir -p apps/app1/src/environments
           echo "export const environment = {
             production: true,
             appVersion: '${VERSION}'
-          };" > apps/app1/src/environments/environment.production.ts
+          };" > apps/app1/src/environments/environment.ts
           
       - run: npm ci --legacy-peer-deps
       - run: npm run build --if-present
