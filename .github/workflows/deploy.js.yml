@@ -1,14 +1,16 @@
 name: CI & Deploy to Vercel
 
 on:
-  push:
+  pull_request:
     branches:
       - develop
       - staging
       - production
+    types: [closed]
 
 jobs:
   build:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     strategy:
