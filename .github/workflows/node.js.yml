@@ -5,7 +5,7 @@ name: CI Checks Pull Request & Release
 
 on:
   push:
-    branches: ['main']
+    branches: ['develop']
   pull_request:
     branches:
       - '**'
@@ -21,10 +21,26 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+
+      - name: Get Tag
+        id: get_tag
+        run: |
+          echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+          echo "VERSION=${GITHUB_REF#refs/tags/}"
+          
+      - name: Create .env file (or edit prod file)
+        run: |
+          mkdir -p apps/app1/src/environments
+          echo "export const environment = {
+            production: true,
+            appVersion: '${VERSION}'
+          };" > apps/app1/src/environments/environment.ts
+          
       - run: npm ci --legacy-peer-deps
       - run: npm run build --if-present
       - run: npm test
